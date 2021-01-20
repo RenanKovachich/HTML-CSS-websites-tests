@@ -1,0 +1,108 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Formulário.css" media="">
+    
+    <title>Formulário</title>
+
+</head>
+<body>
+    <fieldset class="grupo">
+
+             <div>
+                    <h1 class="formulario" id="título">Formulário</h1>
+                    <p id="subtítulo">Complete com suas informações</p>
+                    <br>
+            </div>
+    </fieldset>
+    <form>
+        <fieldset class="grupo">
+                <div class="campo">
+                        <label for="nome"><strong>Nome</strong></label>
+                        <input type="text", name="Nome", id="Nome" required
+                        placeholder="Insira seu nome">
+                </div>
+
+                <div class="campo">
+                        <label for="sobrenome"><strong>Sobrenome</strong></label>
+                        <input type="text", name="Sobrenome", id="Sobrenome" required
+                        placeholder="Insira seu sobrenome">
+                </div>
+        </fieldset>
+
+            <div class="campo">
+                    <label for="email"><strong>Email</strong></label>
+                    <input type="email", name="Email", id="Email" required
+                    placeholder="Insira seu email">
+            </div>
+            
+            <div class="campo">  
+                    <label><strong>De qual lado você é?</strong></label>
+                    <label>
+                        <input type="radio" name="devweb" value="Azul" checked>Azul
+                    </label>
+                    
+                    <label>
+                        <input type="radio" name="devweb" value="Vermelho">Vermelho
+                    </label>
+                    
+                    <label>
+                        <input type="radio" name="devweb" value="Verde">Verde
+                    </label>
+            </div>
+
+            <div class="campo">
+                    <label for="Região"><strong>Região</strong></label>
+                    <select id="Região">
+                        <option selected disabled value="">Selecione</option>
+                        <option>Norte</option>
+                        <option>Nordeste</option>
+                        <option>Centro-Oeste</option>
+                        <option>Sudeste</option>
+                        <option>Sul</option>
+                    </select>
+            </div>
+        <fieldset class="grupo">
+                <div id="checkbox">  
+                        <label class="storm" id="storm"><strong>Selecione as tecnologias que conhece:</strong></label><br>
+                    <input type="checkbox" id="Tecnologia 1" name="Tecnologia 1" value="HTML">
+                        <label for="Tecnologia 1">HTML</label>
+                    <input type="checkbox" id="Tecnologia 2" name="Tecnologia 2" value="Java">
+                        <label for="Tecnologia 2">Java</label>
+                    <input type="checkbox" id="Tecnologia 3" name="Tecnologia 3" value="Phyton">
+                        <label for="Tecnologia 3">Phyton</label>
+                    <input type="checkbox" id="Tecnologia 4" name="Tecnologia 4" value="Java Script">
+                        <label for="Tecnologia 4">Java Script</label>
+                    <input type="checkbox" id="Tecnologia 5" name="Tecnologia 5" value="C#">
+                        <label for="Tecnologia 5">C#</label>
+
+                </div>
+        </fieldset>
+        
+
+            <div class="campo">
+                    <br>
+                    <label><strong>Conte um pouco da sua experiência:</strong></label>
+                    <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+            </div>
+            <div class="footer">
+                <span><strong> Conecte sua rede social</strong></span><br>
+                <div class="social-fields">
+                    <div class="social-fields twitter"></div>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                            Conecte seu twitter
+                        </a>
+                    <div class="social-fields facebook"></div>
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                            Conecte seu facebook
+                </div>
+            </div>
+
+                    <button class="botão" type="submit">Concluido</button><br>
+        
+    </form>
+</body>
+</html>
